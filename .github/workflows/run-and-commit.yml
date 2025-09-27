@@ -41,6 +41,10 @@ jobs:
           # Fetch all remote branches
           git fetch origin
           
+          # Stash changes temporarily
+          git add ical/filtered_calendar.ics
+          git stash push -m "Temporary stash for branch switch"
+          
           # Check if remote calendar-updates branch exists
           if git ls-remote --exit-code --heads origin calendar-updates; then
             # Remote branch exists - checkout and track it
@@ -49,6 +53,9 @@ jobs:
             # Remote branch doesn't exist - create new branch
             git checkout -b calendar-updates
           fi
+          
+          # Apply stashed changes
+          git stash pop
           
           # Add and commit changes
           git add ical/filtered_calendar.ics
