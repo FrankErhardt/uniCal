@@ -43,6 +43,7 @@ jobs:
           
           # Fetch and switch to calendar-updates branch
           git fetch origin
+          git stash
           if git ls-remote --exit-code --heads origin calendar-updates; then
             git checkout calendar-updates
             git pull origin calendar-updates
