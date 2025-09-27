@@ -31,33 +31,8 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # Check if there are any changes to commit
-          if git diff --quiet ical/filtered_calendar.ics; then
-            echo "No changes to filtered_calendar.ics"
-            exit 0
-          fi
-          
-          # Fetch all remote branches
-          git fetch origin
-          
-          # Stash changes temporarily
-          git add ical/filtered_calendar.ics
-          git stash push -m "Temporary stash for branch switch"
-          
-          # Check if remote calendar-updates branch exists
-          if git ls-remote --exit-code --heads origin calendar-updates; then
-            # Remote branch exists - checkout and track it
-            git checkout -B calendar-updates origin/calendar-updates
-          else
-            # Remote branch doesn't exist - create new branch
-            git checkout -b calendar-updates
-          fi
-          
-          # Apply stashed changes
-          git stash pop
-          
+                    
           # Add and commit changes
           git add ical/filtered_calendar.ics
           git commit -m "Update filtered_calendar.ics [skip ci]" || echo "No changes to commit"
-          git push origin calendar-updates
+          git push origin main
