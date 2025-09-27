@@ -35,4 +35,4 @@ jobs:
           # Add and commit changes
           git add ical/filtered_calendar.ics
           git commit -m "Update filtered_calendar.ics [skip ci]" || echo "No changes to commit"
-          git push origin main
+          git push origin local-cal
