@@ -31,8 +31,29 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-                    
+          
+          # Check if there are any changes to commit
+          if git diff --quiet ical/filtered_calendar.ics; then
+            echo "No changes to filtered_calendar.ics"
+            exit 0
+          fi
+          
+          # Save the generated file temporarily
+          cp ical/filtered_calendar.ics /tmp/filtered_calendar.ics
+          
+          # Fetch and switch to calendar-updates branch
+          git fetch origin
+          if git ls-remote --exit-code --heads origin calendar-updates; then
+            git checkout calendar-updates
+            git pull origin calendar-updates
+          else
+            git checkout -b calendar-updates
+          fi
+          
+          # Restore the generated file
+          cp /tmp/filtered_calendar.ics ical/filtered_calendar.ics
+          
           # Add and commit changes
           git add ical/filtered_calendar.ics
           git commit -m "Update filtered_calendar.ics [skip ci]" || echo "No changes to commit"
-          git push origin local-cal
+          git push origin calendar-updates
