@@ -38,9 +38,17 @@ jobs:
             exit 0
           fi
           
-          # Create or switch to calendar-updates branch
-          git fetch origin || true
-          git checkout calendar-updates 2>/dev/null || git checkout -b calendar-updates
+          # Fetch all remote branches
+          git fetch origin
+          
+          # Check if remote calendar-updates branch exists
+          if git ls-remote --exit-code --heads origin calendar-updates; then
+            # Remote branch exists - checkout and track it
+            git checkout -B calendar-updates origin/calendar-updates
+          else
+            # Remote branch doesn't exist - create new branch
+            git checkout -b calendar-updates
+          fi
           
           # Add and commit changes
           git add ical/filtered_calendar.ics
