@@ -1,47 +1,47 @@
 origin_url: https://rapla.dhbw-karlsruhe.de/rapla?page=ical&user=freudenmann&file=TINF23B1
 blocklist:
-    - Interaktive Systeme (KI & IS)
+    - .Grundlagen der KI (KI & BV)
+    - STUV-ADA 3 (freiwilliger Zusatz)
     - e Business
     - Mobile Applikationen
+    - Nachklausuren  (120 min)
     - Ethik für Informatiker (WM-A)
+    - Exkursion Fa. VECTOR in Karlsruhe
     - Netzwerktreffen für Studentinnen
-    - Grundlagen der KI (KI & IS)
-    - Vorbereitungsraum mündl. Prüfung
-    - mündl. Prüfung  ( min)
-    - STUV-ADA 3 (freiwilliger Zusatz)
     - Computergraphik  (BV & CG)
-    - Supervised Machine Learning
-    - Klausur Wahlmodul Bildverarbeitung (KI und BV)  (60 min)
-    - Supervised Machine Learning Exam  (60 min)
     - Klausurwoche 5. Semester
     - Klausurwoche
     - Klausur eBusiness  (90 min)
+    - Klausur Wahlmodul Künstliche Intelligenz und Bildverarbeitung  (120 min)
     - Klausur Wahlmodul Computergrafik und Bildverarbeitung  (120 min)
-    - Klausur Wahlmodul Künstliche Intelligenz und Bildverarbeitung  (60 min)
-    - Klausur Mathematische Grundlagen der Kryptographie (60 min)
+    - Klausur Web-Services (60 min)
     - Klausur Zuverlässige Embedded Systeme (60 min)
     - Klausur Forensik (60 min)
-    - Beginn Theorie 6. Semester
-    - Start 6. Semester
-    - Semesterstart 6.Semester
+    - Klausur Mathematische Grundlagen der Kryptographie (60 min)
     - Faschingsdienstag
-    - Krankenhausinformationssysteme (MD)
-    - Fronleichnam
-    - Pfingstmontag
-    - Christi Himmelfahrt
-    - Klausurwoche 6. Semester
-    - Ostermontag
     - Karfreitag
-    - angewandtes Projektmanagement (eB&PJM)
-    - Controlling im Gesundhtswsn (MD)
-    - e Business (eB&PJM)
-    - Mathematische Grundlagen der Kryptographie
-    - Gamification
-    - Digitale Forensik  (WMA)
-    - Evolutionäre Algorithmen
-    - Bildverarbeitung (KI & BV)
-    - .Grundlagen der KI (KI & BV)
-    - Bildverarbetiung  (BV & CG)
+    - Ostermontag
+    - Pfingstmontag
+    - Fronleichnam
     - angewandtes Projektmanagement
-    - Klausur Wahlmodul KI (Künstliche Intelligenz und Bildverarbeitung)  (60 min)
-    - Medizinische Informatik
+    - Interaktive Systeme (KI & IS)
+    - Bildverarbeitung (KI & BV)
+    - Digitale Forensik  (WMA)
+    - Gamification
+    - Web-Services (WM-A)
+    - Evolutionäre Algorithmen
+    - Hl. 3 Könige
+    - Klausurwoche 5. Semester
+    - Kolloquium 2025  ( min)
+    - Kolloquium 2025 Vorbereitung  ( min)
+    - Beginn Theorie 5. Semester
+    - Studienbeginn 5. Semester
+    - Tag der deutschen Einheit
+    - Karfreitag
+    - Ostermontag
+    - Studienarbeit
+    - Bildverarbetiung (BV & CG)
+    - Mathematische Grundlagen der Kryptographie
+    - Grundlagen der KI (KI & IS)
+    - mündl. Prüfung ( min)
+    - Exkursionstermin TINF23 5. Semester
